@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  isCollapsed = true;
+  toggleNavbar() {
+    this.isCollapsed = !this.isCollapsed;
 
+    const navbarToggle = document.querySelector('.navbar-toggler') as HTMLElement;
+    navbarToggle.blur(); 
+  }
 }

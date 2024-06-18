@@ -1,8 +1,23 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  color: #fff;
+  overflow-x: hidden; 
+}
 
 body {
-    background-color: #222;
-    color: #fff; 
-  }
-  
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  box-sizing: border-box; 
+}
+
