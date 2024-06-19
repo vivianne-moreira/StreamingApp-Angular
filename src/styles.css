@@ -2,6 +2,7 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+
 html, body {
   height: 100%;
   margin: 0;
@@ -21,3 +22,25 @@ body {
   box-sizing: border-box; 
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+app-footer {
+  background-color: #181818;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}

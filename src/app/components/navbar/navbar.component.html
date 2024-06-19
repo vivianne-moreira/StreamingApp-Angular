@@ -1,38 +1,56 @@
-<nav class="navbar navbar-expand-lg navbar-dark px-3" style="background-color: #181818">
+<nav
+  class="navbar navbar-expand-lg navbar-dark px-3"
+  style="background-color: #181818"
+>
   <div class="container-fluid">
     <a class="navbar-brand" routerLink="home">
-      <img src="assets/images/logo.png" alt="Logo" style="width: 35px; height: auto;">
+      <img
+        src="assets/images/logo.png"
+        alt="Logo"
+        style="width: 35px; height: auto"
+      />
     </a>
-    <div style="margin: 0 auto; text-align: center;">
-      <p style="font-size: 1rem; font-weight: bold; margin: 10px;">StreamingApp</p>
+    <div style="margin: 0 auto; text-align: center">
+      <p style="font-size: 1rem; font-weight: bold; margin: 10px">
+        StreamingApp
+      </p>
     </div>
-    <button class="navbar-toggler" type="button" (click)="toggleNavbar()" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" style="font-size: 1rem;"></span>
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="toggleNavbar()"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon" style="font-size: 1rem"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{ 'show': !isCollapsed }">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div
+      class="collapse navbar-collapse"
+      id="navbarSupportedContent"
+      [ngClass]="{ show: !isCollapsed }"
+    >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-2">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="home">Home</a>
+          <a class="nav-link" aria-current="page" routerLink="home" routerLinkActive="active-link">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="movies">Movies</a>
+          <a class="nav-link" routerLink="movies" routerLinkActive="active-link">Movies</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="series">Series</a>
+          <a class="nav-link" routerLink="series" routerLinkActive="active-link">Series</a>
+        </li>
+        <li class="nav-item d-lg-none">
+          <a class="nav-link" routerLink="list/favorites" routerLinkActive="active-link">Favorites</a>
         </li>
       </ul>
-      <!-- <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-secondary" type="submit" style="border-color: #cccccc09;">Search</button>
-      </form> -->
       <ul class="navbar-nav mb-2 mb-lg-0 ms-2">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="list/favorites">
-            <i class="bi bi-chat-square-heart" style="font-size: 1.5rem;"></i>
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link" routerLink="list/favorites" routerLinkActive="active-link">
+            <i class="bi bi-chat-square-heart" style="font-size: 1.5rem"></i>
           </a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-
