@@ -1,5 +1,5 @@
 <div class="px-4">
-  <h1 class="movie">Movie</h1>
+  <h1 class="movie">Filmes</h1>
   <p>
     Descubra um vasto universo de filmes na nossa plataforma de streaming. Com
     uma seleção meticulosamente curada, oferecemos desde os grandes sucessos de
@@ -11,4 +11,11 @@
     pipoca e mergulhe em histórias que emocionam, inspiram e entretêm, a
     qualquer hora e em qualquer lugar.
   </p>
+
+  <div class="movie-grid">
+    <div class="movie-item" *ngFor="let movie of movies">
+      <img [src]="getImageUrl(movie.poster_path)" alt="{{ movie.title }}" />
+      <h3>{{ movie.title }}</h3>
+    </div>
+  </div>
 </div>
