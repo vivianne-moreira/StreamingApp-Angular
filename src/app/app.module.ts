@@ -10,6 +10,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ListFavComponent } from './components/list-favorites/list-fav.component';
+import { ContactsComponentComponent } from './components/contacts-component/contacts-component.component';
+import { FaqsComponentComponent } from './components/faqs-component/faqs-component.component';
+import { AboutComponentComponent } from './components/about-component/about-component.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { ListFavComponent } from './components/list-favorites/list-fav.component
     NavbarComponent,
     FooterComponent,
     ListFavComponent,
+    ContactsComponentComponent,
+    FaqsComponentComponent,
+    AboutComponentComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
