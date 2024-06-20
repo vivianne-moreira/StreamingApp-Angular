@@ -13,6 +13,8 @@ import { ListFavComponent } from './components/list-favorites/list-fav.component
 import { ContactsComponentComponent } from './components/contacts-component/contacts-component.component';
 import { FaqsComponentComponent } from './components/faqs-component/faqs-component.component';
 import { AboutComponentComponent } from './components/about-component/about-component.component';
+import { TmdbService } from './services/tmdb.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,12 @@ import { AboutComponentComponent } from './components/about-component/about-comp
     FaqsComponentComponent,
     AboutComponentComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
